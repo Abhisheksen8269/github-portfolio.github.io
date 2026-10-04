@@ -1,75 +1,95 @@
-/* ── Nav scroll ── */
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 20);
-});
+/* ==========================================================================
+   Abhishek Sen — Personal Academic Portfolio Scripts
+   Clean, lightweight interaction (tabs, image lightbox, mobile nav)
+   ========================================================================== */
 
-/* ── Hamburger ── */
-const hamburger = document.getElementById('hamburger');
-hamburger.addEventListener('click', () => navbar.classList.toggle('menu-open'));
-document.querySelectorAll('.nav-links a').forEach(a => {
-  a.addEventListener('click', () => navbar.classList.remove('menu-open'));
-});
+document.addEventListener('DOMContentLoaded', () => {
+  // Mobile Nav Toggle
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  if (toggleBtn && navMenu) {
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = window.getComputedStyle(navMenu).display === 'none';
+      navMenu.style.display = isHidden ? 'flex' : 'none';
+      if (isHidden) {
+        navMenu.style.flexDirection = 'column';
+        navMenu.style.position = 'absolute';
+        navMenu.style.top = '64px';
+        navMenu.style.left = '0';
+        navMenu.style.width = '100%';
+        navMenu.style.background = '#090d16';
+        navMenu.style.padding = '1.5rem';
+        navMenu.style.borderBottom = '1px solid #1e293b';
+      }
+    });
 
-/* ── Scroll Reveal ── */
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 680) {
+          navMenu.style.display = 'none';
+        }
+      });
+    });
+  }
 
-/* ── Active nav link ── */
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
-  navLinks.forEach(a => {
-    a.style.color = a.getAttribute('href') === '#' + current ? 'var(--white)' : '';
+  // Achievement Tab Switching
+  const tabs = document.querySelectorAll('.ach-tab');
+  const panels = document.querySelectorAll('.ach-panel');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetId = tab.getAttribute('data-target');
+      
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+
+      tab.classList.add('active');
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.classList.add('active');
+      }
+    });
   });
-}, { passive: true });
 
-/* ── Achievements: Tab Switching ── */
-document.querySelectorAll('.ach-tab').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = btn.dataset.tab;
-    document.querySelectorAll('.ach-tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.ach-panel').forEach(p => p.classList.remove('active'));
-    btn.classList.add('active');
-    const panel = document.getElementById('panel-' + target);
-    if (panel) panel.classList.add('active');
+  // Lightbox / Image Modal
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const modalCaption = document.getElementById('modalCaption');
+  const closeBtn = document.querySelector('.modal-close');
+
+  const openModal = (src, caption) => {
+    if (!modal || !modalImg) return;
+    modalImg.src = src;
+    modalImg.alt = caption || 'Certificate / Photograph Preview';
+    if (modalCaption) modalCaption.textContent = caption || '';
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    if (!modal) return;
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  };
+
+  document.querySelectorAll('[data-lightbox]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const src = el.getAttribute('data-src') || el.querySelector('img')?.src;
+      const caption = el.getAttribute('data-caption') || el.querySelector('img')?.alt || '';
+      if (src) openModal(src, caption);
+    });
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
   });
 });
-
-/* ── Photo Slider ── */
-const sliderIndex = { aerothon: 0, isro: 0, roorkee: 0 };
-
-function getSlides(id) {
-  return document.querySelectorAll('#track-' + id + ' .slide');
-}
-
-function updateSlider(id) {
-  const slides = getSlides(id);
-  const total = slides.length;
-  const idx = sliderIndex[id];
-  slides.forEach((s, i) => {
-    s.classList.toggle('active', i === idx);
-  });
-  const counter = document.getElementById('counter-' + id);
-  if (counter) counter.textContent = (idx + 1) + ' / ' + total;
-  const dots = document.querySelectorAll('#dots-' + id + ' .dot');
-  dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-}
-
-function slidePhoto(id, dir) {
-  const total = getSlides(id).length;
-  sliderIndex[id] = (sliderIndex[id] + dir + total) % total;
-  updateSlider(id);
-}
-
-function goToSlide(id, idx) {
-  sliderIndex[id] = idx;
-  updateSlider(id);
-}
-
-/* initialise all sliders */
-['aerothon', 'isro', 'roorkee'].forEach(id => updateSlider(id));

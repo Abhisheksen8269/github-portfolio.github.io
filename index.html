@@ -1,656 +1,991 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Abhishek Sen — Robotics Engineer</title>
-<meta name="description" content="Abhishek Sen — Robotics Engineer specializing in ROS2, SLAM, Autonomous Drones, Edge AI and Embedded Systems. B.Tech IIITDM Kancheepuram."/>
-<link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhishek Sen — Robotics &amp; Autonomous Systems Engineer</title>
+  <meta name="description" content="Portfolio of Abhishek Sen — Robotics and Autonomous Systems Researcher. B.Tech ECE (CGPA 8.50) IIITDM Kancheepuram. Specializing in Safe Control (GP-CBF-QP), LiDAR SLAM, UAV Swarms, and Edge AI."/>
+  <link rel="stylesheet" href="style.css?v=2.0"/>
 </head>
 <body>
 
-<!-- NAV -->
-<nav id="navbar">
-  <a href="#hero" class="nav-logo">abhishek<span>.</span>sen</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#contact" class="nav-cta">Contact</a></li>
-  </ul>
-  <div class="hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-glow"></div>
-  <div class="hero-glow2"></div>
-  <div class="hero-inner">
-    <div class="hero-content">
-      <div class="hero-tag">🚀 Open to opportunities</div>
-      <h1 class="hero-name">Abhishek<br/><span class="accent">Sen</span></h1>
-      <p class="hero-role">
-        <span class="typed">Robotics &amp; Autonomous Systems Engineer</span>
-      </p>
-      <p class="hero-desc">
-        Robotics &amp; Electronics engineer from IIITDM Kancheepuram. I build autonomous systems — from GPS-less Mars drones to ROS2 navigation stacks and Edge AI pipelines on Jetson hardware.
-      </p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-primary">View My Work ↓</a>
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="nav-brand">
+        <span class="nav-brand-status"></span>
+        <span>Abhishek Sen</span>
+      </a>
       
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item"><div class="stat-num">4+</div><div class="stat-label">Internships</div></div>
-        <div class="stat-item"><div class="stat-num">4+</div><div class="stat-label">Drone Projects</div></div>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#thesis">Thesis &amp; LOR</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="images2/thesis_gp_cbf_qp.pdf" target="_blank" class="btn btn-secondary btn-sm" title="Download B.Tech Thesis">📄 Thesis</a>
+        <a href="images2/lor_dr_ram_prasad_padhy.pdf" target="_blank" class="btn btn-secondary btn-sm" title="View Recommendation Letter">📑 LOR</a>
+        <a href="Abhishek_Sen_Academic_CV.pdf" target="_blank" class="btn btn-primary btn-sm" title="Download Academic CV">📥 CV</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
       </div>
     </div>
-    <div class="hero-photo-wrap">
-      <div class="hero-photo-ring">
-        <div class="hero-photo-inner">
-          <img src="images/My_photo.jpg" alt="Abhishek Sen"/>
-        </div>
-      </div>
-      <div class="hero-badge">
-        <div class="hero-badge-dot"></div>
-        <span>Robotics Engineer @ RobotSpace</span>
-      </div>
-    </div>
-  </div>
-</section>
+  </nav>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-inner">
-    <div class="section-label">Who I am</div>
-    <h2 class="section-title">About Me</h2>
-    <div class="about-grid">
-      <div class="about-card reveal">
-        <div class="about-img"><img src="images/My_photo.jpg" alt="Abhishek Sen"/></div>
-        <div class="about-name">Abhishek Sen</div>
-        <div class="about-uni">EC22B1098 · IIITDM Kancheepuram</div>
-        <div class="about-meta">
-          <div class="meta-row"><span class="icon">📍</span> Chennai, India</div>
-          <div class="meta-row"><span class="icon">📧</span> asen4979@gmail.com</div>
-          <div class="meta-row"><span class="icon">📱</span> +91-8269856166</div>
-          <div class="meta-row"><span class="icon">🎓</span> B.Tech Electronics &amp; Comm.</div>
-          <div class="meta-row"><span class="icon">🤖</span> Robotics Engineer — Robot Space</div>
-        </div>
-      </div>
-      <div class="about-text reveal reveal-delay-1">
-        <p>An enthusiastic engineering graduate specializing in Robotics , Artificial intelligence , Deep learning , machine learning  and Electronic hardware. Proven ability to develop and deploy robust, real-time robotics solutions, ranging from Edge AI
-systems (Jetson Orin Nano) to complex SLAM-based autonomous navigation. Highly motivated to apply
-advanced Robot Framework ROS2 , MAVROS on robotic arm and mobile robot to solve challenging, real-
-world perception problems.</p>
-        <div class="info-grid">
-          <div class="info-item"><div class="info-label">Degree</div><div class="info-val">B.Tech (ECE)</div></div>
-          <div class="info-item"><div class="info-label">Specialization</div><div class="info-val">Robotics &amp; AI</div></div>
-          <div class="info-item"><div class="info-label">Batch</div><div class="info-val">2022 – 2026</div></div>
-          <div class="info-item"><div class="info-label">Status</div><div class="info-val" style="color:var(--green)">● Graduating 2026</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text-content">
+          <div class="hero-tag">
+            <span>🚀</span> Open for Graduate Research &amp; Robotics Roles (MEXT Japan 2027)
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm Abhishek Sen.<br/>
+            I engineer <span class="highlight">provably safe</span> autonomous robots.
+          </h1>
+          <div class="hero-role">
+            Robotics &amp; Autonomous Systems Researcher $|$ B.Tech ECE (CGPA: 8.50)
+          </div>
+          <p class="hero-bio">
+            Undergraduate from <strong>IIITDM Kancheepuram</strong> (co-supervised with <strong>IIT Madras Aerospace</strong>). Currently working as a <strong>Robotics Engineer at RobotSpace</strong>. My research bridges non-parametric Bayesian learning (Gaussian Processes) with formal non-linear control theory (Control Barrier Functions) to guarantee safe trajectory navigation under dynamic uncertainty — deployed on physical <strong>Crazyflie 2.1 nano-quadrotors</strong> and industrial outdoor UGVs.
+          </p>
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-inner">
-    <div class="section-label">Career</div>
-    <h2 class="section-title">Experience</h2>
-    <div class="timeline">
-
-      <!-- RobotSpace -->
-      <div class="timeline-item reveal">
-        <div class="timeline-dot" style="background:var(--green);box-shadow:0 0 12px rgba(34,197,94,0.6)"></div>
-        <div class="timeline-card">
-          <div class="exp-top">
-            <div class="exp-role">Robotics Engineer</div>
-            <div class="exp-date">Jun 2026 – Present</div>
-          </div>
-          <div class="exp-company">RobotSpace · Hyderabad</div>
-          <ul class="exp-bullets">
-            <li>Designing and developing robotic systems for real-world deployment scenarios, applying expertise in ROS2, navigation and embedded systems.</li>
-            <li>Working on autonomous mobile robot (AMR) platforms and intelligent control systems for industrial applications.</li>
-            <li>Integrating sensors, actuators, and AI inference pipelines onto robot platforms for robust autonomous operation.</li>
-          </ul>
-          <div class="exp-tags">
-            <span class="tag tag-green">ROS2</span>
-            <span class="tag tag-orange">Autonomous Robots</span>
-            <span class="tag tag-blue">Embedded Systems</span>
-            <span class="tag tag-green">Hyderabad</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- IIT Madras -->
-      <div class="timeline-item reveal reveal-delay-1">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="exp-top">
-            <div class="exp-role">Project Assistant</div>
-            <div class="exp-date">Oct 2025 – May 2026</div>
-          </div>
-          <div class="exp-company">Guidance, Navigation &amp; Control Lab · IIT Madras</div>
-          <ul class="exp-bullets">
-            <li>Implemented a proprietary path-planning system using the Generalized Shape Expansion (GSE) algorithm in Gazebo simulation and real-time hardware via ROS2 &amp; MAVROS.</li>
-            <li>Deployed the navigation stack on an NVIDIA Jetson Orin Nano with a Livox 4D LiDAR for high-fidelity real-time data collection.</li>
-            <li>Demonstrated GSE significantly outperforms traditional RRT* in obstacle avoidance speed &amp; accuracy.</li>
-            <li>Implemented sensor fusion pipelines (Kalman &amp; Particle Filters) integrating IMU and 4D LiDAR data for precise state estimation.</li>
-          </ul>
-          <div class="exp-tags">
-            <span class="tag tag-orange">ROS2 Humble</span>
-            <span class="tag tag-orange">SLAM</span>
-            <span class="tag tag-orange">MAVROS</span>
-            <span class="tag tag-blue">Jetson Orin Nano</span>
-            <span class="tag tag-blue">Sensor Fusion</span>
-            <span class="tag tag-green">Gazebo</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal reveal-delay-2">
-        <div class="timeline-dot" style="background:var(--blue);box-shadow:0 0 12px rgba(59,130,246,0.5)"></div>
-        <div class="timeline-card">
-          <div class="exp-top">
-            <div class="exp-role">Hardware R&amp;D Intern</div>
-            <div class="exp-date">May – Sep 2025</div>
-          </div>
-          <div class="exp-company">32Mins Digital Consultancy Services · IIT Madras Research Park</div>
-          <ul class="exp-bullets">
-            <li>Worked on an AI-driven learning partner device to enhance student engagement during online classes.</li>
-            <li>Developed dual-camera calibration on Texas Instruments TDA4VM board and wrote a custom camera driver deployed in Docker.</li>
-            <li>Improved user interaction and feedback loop to personalise learning using AI models.</li>
-          </ul>
-          <div class="exp-tags">
-            <span class="tag tag-orange">Embedded Systems</span>
-            <span class="tag tag-orange">Edge AI</span>
-            <span class="tag tag-blue">TDA4VM</span>
-            <span class="tag tag-blue">Docker</span>
-            <span class="tag tag-green">Image Processing</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal reveal-delay-3">
-        <div class="timeline-dot" style="background:var(--green);box-shadow:0 0 12px rgba(34,197,94,0.5)"></div>
-        <div class="timeline-card">
-          <div class="exp-top">
-            <div class="exp-role">Project Intern</div>
-            <div class="exp-date">May – Jul 2024</div>
-          </div>
-          <div class="exp-company">Autonomous Systems Laboratory</div>
-          <ul class="exp-bullets">
-            <li>Developed an autonomous robot capable of navigating complex environments using LiDAR, SLAM, and Computer Vision — both simulation and real-time.</li>
-            <li>Equipped the robot with real-time obstacle detection and avoidance for safe and efficient navigation.</li>
-            <li>Implemented the GMapping algorithm to generate precise maps of the environment.</li>
-          </ul>
-          <div class="exp-tags">
-            <span class="tag tag-orange">Computer Vision</span>
-            <span class="tag tag-blue">ROS2</span>
-            <span class="tag tag-green">SLAM</span>
-            <span class="tag tag-green">GMapping</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-inner">
-    <div class="section-label">What I've built</div>
-    <h2 class="section-title">Personal Projects</h2>
-    <div class="projects-grid">
-
-      <div class="project-card reveal">
-        <div class="project-icon">🎯</div>
-        <div class="project-title">Autonomous Docking Using ArUco Markers</div>
-        <div class="project-desc">ROS2 package for autonomous docking of a mobile robot using HSV and ArUco marker detection. Features visual servoing, Kalman filtering, and precise target alignment in Gazebo simulations.</div>
-        <div class="project-footer">
-          <div class="project-tags">
-            <span class="tag tag-orange">ROS2</span>
-            <span class="tag tag-blue">OpenCV</span>
-            <span class="tag tag-green">Control Theory</span>
-          </div>
-          <a href="https://github.com/Abhisheksen8269/Autonomous-Docking-Using-ArUco-Markers-" class="project-link" target="_blank" rel="noopener">GitHub →</a>
-        </div>
-      </div>
-
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-icon">🛤️</div>
-        <div class="project-title">Robust Navigation &amp; Trajectory Control for Autonomous Mobile Robots</div>
-        <div class="project-desc">Custom lightweight navigation stack for TurtleBot3. Uses B-Spline Trajectory Smoothing for C² continuous paths and a Pure Pursuit Controller with Sequential Index Search for 20Hz high-frequency control in unstructured environments.</div>
-        <div class="project-footer">
-          <div class="project-tags">
-            <span class="tag tag-orange">ROS2</span>
-            <span class="tag tag-blue">Control Theory</span>
-            <span class="tag tag-green">Python</span>
-          </div>
-          <a href="https://github.com/Abhisheksen8269/Robust-Navigation-Trajectory-Control-for-Autonomous-Mobile-Robots" class="project-link" target="_blank" rel="noopener">GitHub →</a>
-        </div>
-      </div>
-
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-icon">🔍</div>
-        <div class="project-title">Building a Pseudo RGB-D SLAM ROS Package</div>
-        <div class="project-desc">A custom ROS/ROS2 package implementing a Pseudo RGB-D SLAM system. Fuses monocular camera data with depth estimation models and 2D LiDAR scans to construct dense 3D octomaps and perform robust localization in GPS-denied environments.</div>
-        <div class="project-footer">
-          <div class="project-tags">
-            <span class="tag tag-orange">ROS2</span>
-            <span class="tag tag-blue">SLAM</span>
-            <span class="tag tag-green">OpenCV</span>
-          </div>
-          <a href="https://github.com/Abhisheksen8269/Building-a-Pseudo-RGB-D-SLAM-ROS-Package" class="project-link" target="_blank" rel="noopener">GitHub →</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-inner">
-    <div class="section-label">Tech Stack</div>
-    <h2 class="section-title">Skills &amp; Tools</h2>
-    <div class="skills-grid">
-      <div class="skill-group reveal">
-        <div class="skill-group-title">🤖 Robotics &amp; Navigation</div>
-        <div class="skill-pills">
-          <span class="skill-pill">ROS2 Humble</span>
-          <span class="skill-pill">MAVROS</span>
-          <span class="skill-pill">SLAM</span>
-          <span class="skill-pill">GMapping</span>
-          <span class="skill-pill">ArduPilot</span>
-          <span class="skill-pill">Gazebo</span>
-          <span class="skill-pill">RViz2</span>
-          <span class="skill-pill">Path Planning</span>
-        </div>
-      </div>
-      <div class="skill-group reveal reveal-delay-1">
-        <div class="skill-group-title">🧠 AI / ML / Vision</div>
-        <div class="skill-pills">
-          <span class="skill-pill">YOLOv8</span>
-          <span class="skill-pill">PyTorch</span>
-          <span class="skill-pill">TensorFlow</span>
-          <span class="skill-pill">OpenCV</span>
-          <span class="skill-pill">ResNet-18</span>
-          <span class="skill-pill">Keras</span>
-          <span class="skill-pill">Scikit-Learn</span>
-          <span class="skill-pill">Edge AI</span>
-        </div>
-      </div>
-      <div class="skill-group reveal reveal-delay-2">
-        <div class="skill-group-title">⚙️ Hardware &amp; Embedded</div>
-        <div class="skill-pills">
-          <span class="skill-pill">Jetson Orin Nano</span>
-          <span class="skill-pill">Raspberry Pi</span>
-          <span class="skill-pill">Arduino</span>
-          <span class="skill-pill">ESP32</span>
-          <span class="skill-pill">TDA4VM</span>
-          <span class="skill-pill">PCB Design</span>
-          <span class="skill-pill">Altium</span>
-          <span class="skill-pill">EasyEDA</span>
-        </div>
-      </div>
-      <div class="skill-group reveal reveal-delay-3">
-        <div class="skill-group-title">💻 Languages &amp; Tools</div>
-        <div class="skill-pills">
-          <span class="skill-pill">Python</span>
-          <span class="skill-pill">C / C++</span>
-          <span class="skill-pill">JavaScript</span>
-          <span class="skill-pill">HTML + CSS</span>
-          <span class="skill-pill">Docker</span>
-          <span class="skill-pill">Git / GitHub</span>
-          <span class="skill-pill">NumPy</span>
-          <span class="skill-pill">SciPy</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section id="achievements">
-  <div class="section-inner">
-    <div class="section-label">Recognition</div>
-    <h2 class="section-title">Achievements &amp; Events</h2>
-
-    <!-- Tab Navigation -->
-    <div class="ach-tabs">
-      <button class="ach-tab active" data-tab="aerothon">✈️ SAE Aerothon</button>
-      <button class="ach-tab" data-tab="isro">🚀 ISRO Robotics Challenge</button>
-      <button class="ach-tab" data-tab="roorkee">🏛️ IIT Roorkee Cognizance</button>
-    </div>
-
-    <!-- ══ Panel: SAE Aerothon ══ -->
-    <div class="ach-panel active" id="panel-aerothon">
-      <div class="ach-content-grid">
-        <div class="ach-left">
-          <div class="ach-event-tag">National Drone Design Competition</div>
-          <h3 class="ach-event-title">SAE Aerothon</h3>
-          <p class="ach-event-org">Society of Automotive Engineers India</p>
-          <p class="ach-event-desc">India's premier annual UAV competition. Teams design, build, and fly autonomous drones through multiple challenge rounds — from detailed design reports and technical presentations to actual flight missions with waypoint navigation, payload drop, and precision landing. Team Astra competed against 100+ teams nationally in 2024 and 2025.</p>
-          <div class="ach-stats-row">
-            <div class="ach-stat"><div class="ach-stat-num">100+</div><div class="ach-stat-lbl">Teams Competing</div></div>
-            <div class="ach-stat"><div class="ach-stat-num">2</div><div class="ach-stat-lbl">Years Participated</div></div>
-            <div class="ach-stat"><div class="ach-stat-num">AIR 8</div><div class="ach-stat-lbl">Best Ranking</div></div>
-          </div>
-        </div>
-        <div class="ach-right">
-          <div class="ach-right-label">Key Achievements</div>
-          <div class="ach-item">
-            <div class="ach-item-badge gold">AIR 8</div>
-            <div class="ach-item-text">All India Rank 8 — Detailed Design Report &amp; Presentation Round, SAE Aerothon 2025</div>
-          </div>
-
-          <div class="ach-item">
-            <div class="ach-item-badge blue">AIR 21</div>
-            <div class="ach-item-text">All India Rank 21 — Report Documentation Round, SAE Aerothon 2024</div>
-          </div>
-          <div class="ach-item">
-            <div class="ach-item-badge green">Design</div>
-            <div class="ach-item-text">Designed fully autonomous fixed-wing UAV with precision navigation and payload delivery systems</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Photo Slider -->
-      <div class="photo-slider" id="slider-aerothon">
-        <div class="slider-header">
-          <span class="slider-label">📸 Event Photographs</span>
-          <div class="slider-nav">
-            <button class="slider-btn" onclick="slidePhoto('aerothon', -1)" aria-label="Previous photo">&#8592;</button>
-            <span class="slider-counter" id="counter-aerothon">1 / 2</span>
-            <button class="slider-btn" onclick="slidePhoto('aerothon', 1)" aria-label="Next photo">&#8594;</button>
-          </div>
-        </div>
-        <div class="slider-track" id="track-aerothon">
-          <div class="slide active">
-            <img src="images/aerothon_team.jpeg" alt="Team Astra at SAE Aerothon 2024" loading="lazy"/>
-            <div class="slide-caption">Team Astra at SAE Aerothon 2024 — Gitam University, Visakhapatnam</div>
-          </div>
-          <div class="slide">
-            <img src="images/aerothon_2025_presentation.jpg" alt="Team Astra at SAE Aerothon 2025" loading="lazy"/>
-            <div class="slide-caption">Team Astra at SAE Aerothon 2025 — Presentation &amp; Design Evaluation</div>
-          </div>
-        </div>
-        <div class="slider-dots" id="dots-aerothon">
-          <span class="dot active" onclick="goToSlide('aerothon', 0)"></span>
-          <span class="dot" onclick="goToSlide('aerothon', 1)"></span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ══ Panel: ISRO Robotics ══ -->
-    <div class="ach-panel" id="panel-isro">
-      <div class="ach-content-grid">
-        <div class="ach-left">
-          <div class="ach-event-tag">Mars Analogue Mission · National Finalist</div>
-          <h3 class="ach-event-title">ISRO Robotics Challenge</h3>
-          <p class="ach-event-org">Indian Space Research Organisation (IRoC-U 2025)</p>
-          <p class="ach-event-desc">ISRO's prestigious national competition challenging students to build autonomous drones for simulated Martian terrain — no GPS allowed. Team Astra built a fully autonomous drone using Intel RealSense SLAM, YOLOv8 vision, and ROS2/MAVROS stack. Selected as top finalist and personally appreciated by ISRO Chairman S. Somnath and Indian astronauts at National Space Day, New Delhi.</p>
-          <div class="ach-stats-row">
-            <div class="ach-stat"><div class="ach-stat-num">Top</div><div class="ach-stat-lbl">Finalist</div></div>
-            <div class="ach-stat"><div class="ach-stat-num">0 GPS</div><div class="ach-stat-lbl">Autonomous Flight</div></div>
-            <div class="ach-stat"><div class="ach-stat-num">ISRO</div><div class="ach-stat-lbl">Appreciation</div></div>
-          </div>
-        </div>
-        <div class="ach-right">
-          <div class="ach-right-label">Key Achievements</div>
-          <div class="ach-item">
-            <div class="ach-item-badge gold">🏆 Finalist</div>
-            <div class="ach-item-text">Top finalist in ISRO Robotics Challenge 2025 (IRoC-U) — competing against top national teams</div>
-          </div>
-          <div class="ach-item">
-            <div class="ach-item-badge orange">Chairman</div>
-            <div class="ach-item-text">Personally appreciated by ISRO Chairman Dr. S. Somnath at National Space Day, Bharat Mandapam, New Delhi</div>
-          </div>
-          <div class="ach-item">
-            <div class="ach-item-badge blue">Astronaut</div>
-            <div class="ach-item-text">Demonstrated the drone to Indian astronaut Angad Pratap and senior ISRO scientists</div>
-          </div>
-          <div class="ach-item">
-            <div class="ach-item-badge green">SLAM</div>
-            <div class="ach-item-text">Built GPS-less autonomous drone with RealSense SLAM, YOLOv8 object detection &amp; ROS2 for Martian terrain</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Photo Slider -->
-      <div class="photo-slider" id="slider-isro">
-        <div class="slider-header">
-          <span class="slider-label">📸 Event Photographs</span>
-          <div class="slider-nav">
-            <button class="slider-btn" onclick="slidePhoto('isro', -1)" aria-label="Previous photo">&#8592;</button>
-            <span class="slider-counter" id="counter-isro">1 / 7</span>
-            <button class="slider-btn" onclick="slidePhoto('isro', 1)" aria-label="Next photo">&#8594;</button>
-          </div>
-        </div>
-        <div class="slider-track" id="track-isro">
-          <div class="slide active">
-            <img src="images/isro_hq_team.jpg" alt="Team Astra at ISRO Headquarters" loading="lazy"/>
-            <div class="slide-caption">Team Astra at ISRO Space Exhibition — Chandrayaan &amp; ISRO rocket models, National Space Day</div>
-          </div>
-          <div class="slide">
-            <img src="images/isro_chairman_somnath.jpg" alt="ISRO Chairman Dr. S. Somnath at Bharat Mandapam" loading="lazy"/>
-            <div class="slide-caption">ISRO Chairman Dr. S. Somnath visited the Team Astra stall — Bharat Mandapam, New Delhi</div>
-          </div>
-          <div class="slide">
-            <img src="images/isro_angad_pratap.jpg" alt="Demonstrating drone to Indian astronaut Angad Pratap" loading="lazy"/>
-            <div class="slide-caption">Demonstrating the autonomous drone to Indian astronaut Angad Pratap at National Space Day</div>
-          </div>
-          <div class="slide">
-            <img src="images/isro_bharat_mandapam.jpg" alt="Team with defence personnel at National Space Day" loading="lazy"/>
-            <div class="slide-caption">Team with defence personnel at the National Space Day expo — Bharat Mandapam, New Delhi</div>
-          </div>
-          <div class="slide">
-            <img src="images/isro_bharat_mandapam2.jpg" alt="Drone presentation at Bharat Mandapam" loading="lazy"/>
-            <div class="slide-caption">Live drone presentation at Bharat Mandapam — discussing the GPS-less autonomous navigation system</div>
-          </div>
-          <div class="slide">
-            <img src="images/isro new 1.jpeg" alt="Team Astra at ISRO Robotics Challenge" loading="lazy"/>
-            <div class="slide-caption">Team Astra at the ISRO Robotics Challenge exhibition arena</div>
-          </div>
-          <div class="slide">
-            <img src="images/isro new2 .jpeg" alt="Team Astra presenting drone at ISRO" loading="lazy"/>
-            <div class="slide-caption">Team Astra presenting the custom Mars analogue drone to ISRO judges</div>
-          </div>
-        </div>
-        <div class="slider-dots" id="dots-isro">
-          <span class="dot active" onclick="goToSlide('isro', 0)"></span>
-          <span class="dot" onclick="goToSlide('isro', 1)"></span>
-          <span class="dot" onclick="goToSlide('isro', 2)"></span>
-          <span class="dot" onclick="goToSlide('isro', 3)"></span>
-          <span class="dot" onclick="goToSlide('isro', 4)"></span>
-          <span class="dot" onclick="goToSlide('isro', 5)"></span>
-          <span class="dot" onclick="goToSlide('isro', 6)"></span>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- ══ Panel: IIT Roorkee ══ -->
-    <div class="ach-panel" id="panel-roorkee">
-      <div class="ach-content-grid">
-        <div class="ach-left">
-          <div class="ach-event-tag">Autonomous Drone Competition</div>
-          <h3 class="ach-event-title">IIT Roorkee Cognizance</h3>
-          <p class="ach-event-org">Cognizance, IIT Roorkee</p>
-          <p class="ach-event-desc">Cognizance is the annual technical festival of IIT Roorkee, featuring high-stakes robotics competitions. The Autonomous Drone Competition challenges teams to design and program UAVs for autonomous navigation, waypoint flight, and precision target tracking/landing, testing the limits of path-planning and edge-vision integration.</p>
-          <div class="ach-stats-row">
-            <div class="ach-stat"><div class="ach-stat-num">National</div><div class="ach-stat-lbl">Competition</div></div>
-            <div class="ach-stat"><div class="ach-stat-num">Autonomous</div><div class="ach-stat-lbl">Drone Mission</div></div>
-            <div class="ach-stat"><div class="ach-stat-num">IIT</div><div class="ach-stat-lbl">Roorkee</div></div>
-          </div>
-        </div>
-        <div class="ach-right">
-          <div class="ach-right-label">Key Achievements</div>
-          <div class="ach-item">
-            <div class="ach-item-badge gold">🏆 Finalist</div>
-            <div class="ach-item-text">Competed against top national teams in the autonomous drone challenge at IIT Roorkee Cognizance</div>
-          </div>
-          <div class="ach-item">
-            <div class="ach-item-badge orange">✅ Auto</div>
-            <div class="ach-item-text">Successfully executed autonomous flight, waypoint navigation, and obstacle avoidance routines</div>
-          </div>
-          <div class="ach-item">
-            <div class="ach-item-badge blue">Custom UAV</div>
-            <div class="ach-item-text">Designed and engineered a custom drone platform integrated with advanced flight controllers and edge AI pipelines</div>
-          </div>
-          <div class="ach-item">
-            <div class="ach-item-badge green">IIT Roorkee</div>
-            <div class="ach-item-text">Represented IIITDM Kancheepuram, showcasing high-fidelity hardware-in-the-loop drone simulations and actual field testing</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Photo Slider -->
-      <div class="photo-slider" id="slider-roorkee">
-        <div class="slider-header">
-          <span class="slider-label">📸 Event Photographs</span>
-          <div class="slider-nav">
-            <button class="slider-btn" onclick="slidePhoto('roorkee', -1)" aria-label="Previous photo">&#8592;</button>
-            <span class="slider-counter" id="counter-roorkee">1 / 1</span>
-            <button class="slider-btn" onclick="slidePhoto('roorkee', 1)" aria-label="Next photo">&#8594;</button>
-          </div>
-        </div>
-        <div class="slider-track" id="track-roorkee">
-          <div class="slide active">
-            <img src="images/IIT Roorkee.jpeg" alt="Team Astra at IIT Roorkee Cognizance" loading="lazy"/>
-            <div class="slide-caption">Team Astra at IIT Roorkee Cognizance Autonomous Drone Competition</div>
-          </div>
-        </div>
-        <div class="slider-dots" id="dots-roorkee">
-          <span class="dot active" onclick="goToSlide('roorkee', 0)"></span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- POSITIONS -->
-<section id="positions">
-  <div class="section-inner">
-    <div class="section-label">Leadership</div>
-    <h2 class="section-title">Positions &amp; Activities</h2>
-    <div class="positions-grid">
-      <div class="pos-card reveal">
-        <div class="pos-top">
-          <div class="pos-icon">✈️</div>
-          <div>
-            <div class="pos-role">Team Captain</div>
-            <div class="pos-org">Aerobotics Team Astra</div>
-            <div class="pos-period">Jul 2023 – Jan 2026</div>
-          </div>
-        </div>
-        <div class="pos-desc">Led the team in national drone competitions. Developed skills in PCB design, team management, Arduino IDE, and wireless communication using MAVLink protocol. Deep expertise in flight controllers and propulsion systems.</div>
-        <div class="exp-tags">
-          <span class="tag tag-orange">MAVLink</span>
-          <span class="tag tag-blue">PCB Design</span>
-          <span class="tag tag-green">Team Lead</span>
-        </div>
-      </div>
-      <div class="pos-card reveal reveal-delay-1">
-        <div class="pos-top">
-          <div class="pos-icon">🎖️</div>
-          <div>
-            <div class="pos-role">NCC Cadet</div>
-            <div class="pos-org">National Cadet Corps</div>
-            <div class="pos-period">2023 – 2025</div>
-          </div>
-        </div>
-        <div class="pos-desc">Active NCC Cadet, developing discipline, leadership and teamwork through structured training programmes.</div>
-        <div class="exp-tags">
-          <span class="tag tag-blue">Leadership</span>
-          <span class="tag tag-green">Discipline</span>
-        </div>
-      </div>
-      <div class="pos-card reveal reveal-delay-2">
-        <div class="pos-top">
-          <div class="pos-icon">🎭</div>
-          <div>
-            <div class="pos-role">Coordinator</div>
-            <div class="pos-org">Dramatics Cultural Club</div>
-            <div class="pos-period">2023 – 2025</div>
-          </div>
-        </div>
-        <div class="pos-desc">Coordinated cultural events and dramatic performances, honing communication and event management skills alongside technical studies.</div>
-        <div class="exp-tags">
-          <span class="tag tag-blue">Communication</span>
-          <span class="tag tag-green">Event Mgmt</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-inner">
-    <div class="section-label">Get in touch</div>
-    <h2 class="section-title">Contact</h2>
-    <div class="contact-wrap">
-      <div class="contact-text">
-        <h3>Let's build something great together.</h3>
-        <p>I'm actively looking for full-time roles and collaborations in Robotics, Autonomous Systems, and Edge AI. Whether it's a research project or industry role — I'd love to hear from you.</p>
-        <div class="contact-links">
-          <a href="mailto:asen4979@gmail.com" class="contact-link">
-            <div class="contact-link-icon cl-email">📧</div>
-            <div>
-              <div class="contact-link-label">Email</div>
-              <div class="contact-link-val">asen4979@gmail.com</div>
+          <div class="hero-highlights">
+            <div class="hero-stat-item">
+              <div class="num">8.50 / 10</div>
+              <div class="label">B.Tech CGPA (ECE)</div>
             </div>
+            <div class="hero-stat-item">
+              <div class="num">100% Rate</div>
+              <div class="label">34 Crazyflie Flights</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="num">Top Finalist</div>
+              <div class="label">ISRO Robotics Challenge</div>
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <a href="Abhishek_Sen_Academic_CV.pdf" target="_blank" class="btn btn-primary">
+              <span>📥</span> Download Academic CV
+            </a>
+            <a href="#thesis" class="btn btn-secondary">
+              <span>🔬</span> Explore Capstone Thesis
+            </a>
+            <a href="https://github.com/Abhisheksen8269" target="_blank" rel="noopener" class="btn btn-secondary">
+              <span>💻</span> GitHub Repositories
+            </a>
+            <a href="https://www.linkedin.com/in/abhishek-sen-aab105259/" target="_blank" rel="noopener" class="btn btn-secondary">
+              <span>🔗</span> LinkedIn Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Card -->
+        <div class="hero-photo-card">
+          <div class="hero-photo-wrapper">
+            <img src="images/My_photo.jpg" alt="Abhishek Sen — Robotics Engineer"/>
+          </div>
+          <div class="hero-meta-badge">
+            <div class="hero-meta-row"><strong>Degree:</strong> B.Tech in ECE (2022–2026)</div>
+            <div class="hero-meta-row"><strong>Institute:</strong> IIITDM Kancheepuram</div>
+            <div class="hero-meta-row"><strong>Current:</strong> Robotics Engineer @ RobotSpace</div>
+            <div class="hero-meta-row"><strong>Email:</strong> asen4979@gmail.com</div>
+            <div class="hero-meta-row"><strong>Target:</strong> Masters in Robotics (MEXT, Japan)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Academic &amp; Engineering Profile</div>
+        <h2 class="section-title">About My Work</h2>
+        <p class="section-subtitle">
+          Bridging mathematical safety guarantees with physical, embedded hardware deployment in real-world robotics.
+        </p>
+      </div>
+
+      <div class="thesis-card">
+        <p class="thesis-body">
+          I specialize in <strong>autonomous navigation, state estimation, and provably safe non-linear control</strong> for ground and aerial robots. During my undergraduate studies at IIITDM Kancheepuram and collaborative research at IIT Madras, I focused on addressing the fundamental challenge of autonomous trajectory planning in dynamic, obstacle-cluttered environments where moving obstacles have unknown velocities.
+        </p>
+        <p class="thesis-body">
+          Unlike purely simulation-based algorithms, my work emphasizes <strong>closed-loop physical deployment</strong>. I have formulated mathematical proofs for probabilistic forward invariance, benchmarked algorithms across hundreds of simulation runs, and physically flown them on nano-quadrotors and heavy payload rovers using ROS 2, PX4 Autopilot, Livox 4D LiDAR, and Jetson companion computers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Thesis Section -->
+  <section id="thesis">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Featured Capstone Research</div>
+        <h2 class="section-title">Undergraduate Capstone Thesis</h2>
+        <p class="section-subtitle">
+          Probabilistic Safe Navigation in Obstacle-Cluttered Dynamic Environments: A Gaussian Process–Enabled Control Barrier Function Approach
+        </p>
+      </div>
+
+      <div class="thesis-card">
+        <div class="thesis-badge-row">
+          <span class="badge-tag">🔬 Unified Framework: GP-CBF-QP</span>
+          <span class="badge-tag">📐 Formal Safety Proof</span>
+          <span class="badge-tag">🚁 Crazyflie 2.1 Nano-UAV</span>
+          <span class="badge-tag">📡 UWB Loco Positioning + IMU</span>
+        </div>
+
+        <h3 class="thesis-title">GP-CBF-QP: Safe Autonomous Quadrotor Navigation</h3>
+        <div class="thesis-advisors">
+          Supervised by: <strong>Dr. Selvajyothi K</strong> (Associate Prof., IIITDM Kancheepuram) &amp; <strong>Dr. Satadal Ghosh</strong> (Assistant Prof., Aerospace Engineering, IIT Madras)
+        </div>
+
+        <p class="thesis-body">
+          Navigating autonomous aerial vehicles through dynamic environments with moving obstacles of unknown velocities poses fundamental safety risks. This research derived <strong>GP-CBF-QP</strong>, uniting non-parametric Bayesian regression with control theory. A Gaussian Process with squared exponential kernels infers unknown velocity vector fields and quantifies epistemic uncertainty online, systematically embedding these bounds into Control Barrier Functions (CBFs) via concentration inequalities. A Quadratic Program (QP) minimally adjusts nominal control inputs to ensure probabilistic forward invariance with formal mathematical proof: <code>P[h(x(t), x_o(t)) &ge; 0, &forall;t &ge; 0] &ge; 1 - &delta;</code>.
+        </p>
+
+        <div class="thesis-grid-stats">
+          <div class="t-stat">
+            <div class="val">81% Drop</div>
+            <div class="lbl">Collision vs Reactive Baselines</div>
+          </div>
+          <div class="t-stat">
+            <div class="val">72% Drop</div>
+            <div class="lbl">Collision vs Deterministic CBF</div>
+          </div>
+          <div class="t-stat">
+            <div class="val">34 Flights</div>
+            <div class="lbl">100% Real Hardware Success</div>
+          </div>
+          <div class="t-stat">
+            <div class="val">1.20 ms</div>
+            <div class="lbl">QP Solve Time @ 20 Hz</div>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <a href="images2/thesis_gp_cbf_qp.pdf" target="_blank" class="btn btn-primary">
+            <span>📄</span> Download Full End-Sem Thesis PDF (2 MB)
           </a>
-          <a href="https://github.com/Abhisheksen8269?tab=repositories" class="contact-link" target="_blank">
-            <div class="contact-link-icon cl-github">💻</div>
-            <div>
-              <div class="contact-link-label">GitHub</div>
-              <div class="contact-link-val">github.com/Abhisheksen8269</div>
-            </div>
+          <a href="images2/lor_dr_ram_prasad_padhy.pdf" target="_blank" class="btn btn-secondary">
+            <span>📑</span> View Letter of Recommendation (LOR)
           </a>
-          <a href="https://www.linkedin.com/in/abhishek-sen-aab105259/" class="contact-link" target="_blank">
-            <div class="contact-link-icon cl-linkedin">🔗</div>
-            <div>
-              <div class="contact-link-label">LinkedIn</div>
-              <div class="contact-link-val">linkedin.com/in/abhishek-sen-aab105259</div>
-            </div>
+          <a href="https://github.com/Abhisheksen8269" target="_blank" rel="noopener" class="btn btn-secondary">
+            <span>💻</span> View Implementation Repositories
           </a>
         </div>
       </div>
-      <div class="edu-card reveal">
-        <div class="edu-title">🎓 Education</div>
-        <div class="edu-degree">Bachelor of Technology — Electronics &amp; Communication</div>
-        <div class="edu-uni">Indian Institute of Information Technology Design and Manufacturing, Kancheepuram</div>
-        <div class="edu-meta">
-          <div class="edu-meta-item">Batch: <strong>2022 – 2026</strong></div>
-          <div class="edu-meta-item">Roll: <strong>EC22B1098</strong></div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Career &amp; Research Appointments</div>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">
+          Real-world hardware deployment, industry engineering, and premier research laboratory appointments.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <!-- RobotSpace -->
+        <div class="timeline-item">
+          <div class="timeline-dot">💼</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-role">Robotics Engineer</div>
+              <div class="timeline-date">April 2026 – Present</div>
+            </div>
+            <div class="timeline-org">RobotSpace · Hyderabad, Telangana</div>
+            <ul class="timeline-bullets">
+              <li>Developing an <strong>Autonomous Outdoor UGV</strong> with high-precision path planning, waypoint tracking, and obstacle avoidance.</li>
+              <li>Engineered the system to transport a <strong>50 kg payload</strong> while maintaining a positional accuracy of <strong>2 cm</strong> using RTK-GPS correction and IMU-wheel odometry fusion.</li>
+              <li>Designed and built a custom Ground Control Station (GCS) user interface enabling operators to plan and dispatch paths seamlessly from mobile or laptop devices via REST APIs and Docker containers.</li>
+              <li>Engineered an adaptive nighttime navigation pipeline combining dynamic obstacle avoidance with ambient lux intensity graphs.</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">PX4 Autopilot</span>
+              <span class="tech-tag">Gazebo Harmonic</span>
+              <span class="tech-tag">MAVSDK</span>
+              <span class="tech-tag">RTK GPS</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">ROS 2</span>
+            </div>
+          </div>
         </div>
-        <div class="edu-courses">Relevant Coursework: <span>Data Structures &amp; Algorithms · OOP · Computer Vision · Embedded Systems</span></div>
+
+        <!-- IIT Madras GNC Lab -->
+        <div class="timeline-item">
+          <div class="timeline-dot">🚁</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-role">Project Assistant — Autonomous Swarm Drones with Dynamic Motion Planning</div>
+              <div class="timeline-date">Oct 2025 – April 2026</div>
+            </div>
+            <div class="timeline-org">Guidance, Navigation &amp; Control (GNC) Lab · IIT Madras</div>
+            <ul class="timeline-bullets">
+              <li>Developed autonomous swarm drone motion planning for dynamic obstacle avoidance in GPS-denied environments utilizing an Ultra-Wideband (UWB) Loco-positioning system.</li>
+              <li>Deployed the navigation stack on an <strong>NVIDIA Jetson Orin Nano</strong> companion computer paired with a <strong>Livox 4D LiDAR</strong> for high-fidelity spatial point-cloud acquisition.</li>
+              <li>Demonstrated that the Generalized Shape Expansion (GSE) algorithm significantly outperformed traditional sampling-based planners (e.g., RRT*) in computational speed, clearance margins, and obstacle evasion.</li>
+              <li>Designed sensor fusion pipelines using <strong>Kalman and Particle Filters</strong> to integrate IMU telemetry and 4D LiDAR data for precise high-frequency state estimation.</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">ROS2 Humble</span>
+              <span class="tech-tag">Livox 4D LiDAR</span>
+              <span class="tech-tag">Jetson Orin Nano</span>
+              <span class="tech-tag">Online GSE Algorithm</span>
+              <span class="tech-tag">MAVROS</span>
+              <span class="tech-tag">Particle Filters</span>
+              <span class="tech-tag">EKF</span>
+            </div>
+            <div class="btn-group" style="margin-top: 1rem;">
+              <a href="https://drive.google.com/drive/folders/14y7HxgghWjLR2VWVp-VlEUC6rmxn8xJE" target="_blank" rel="noopener" class="btn btn-drive btn-sm">
+                <span>📁</span> Google Drive Project Resources &amp; Videos
+              </a>
+              <a href="https://drive.google.com/file/d/1Ceufe5ekdzJ2WVTf7VU-uKpZ0vCXIQcZ/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-paper btn-sm">
+                <span>📄</span> Research Paper Link
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Autonomous Systems Lab IIITDM -->
+        <div class="timeline-item">
+          <div class="timeline-dot">🤖</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-role">Research Intern — Autonomous Ground Robot Navigation &amp; SLAM</div>
+              <div class="timeline-date">May 2024 – July 2024</div>
+            </div>
+            <div class="timeline-org">Autonomous Systems Laboratory · IIITDM Kancheepuram (Under Dr. Ram Prasad Padhy, IIT Bhubaneswar)</div>
+            <ul class="timeline-bullets">
+              <li>Integrated ROS 2 with a <strong>Velodyne VLP-16 3D LiDAR</strong> on a ground mobile robot to enable real-time spatial mapping and autonomous navigation.</li>
+              <li>Implemented the GMapping SLAM algorithm using a <strong>Rao-Blackwellized Particle Filter</strong>, incorporating adaptive sampling distributions and selective resampling to enhance localization accuracy.</li>
+              <li>Converted raw sensor streams from the benchmark <strong>KITTI Vision Benchmark Suite</strong> into structured ROS 2 bag files, optimizing TF2 transform pipelines and benchmarking against ground truth.</li>
+              <li>Engineered a stereo-vision spatial object tracker and successfully deployed it on physical robotic hardware for reactive obstacle avoidance.</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">ROS 2</span>
+              <span class="tech-tag">Velodyne VLP-16</span>
+              <span class="tech-tag">GMapping</span>
+              <span class="tech-tag">KITTI Dataset</span>
+              <span class="tech-tag">Stereo Vision</span>
+              <span class="tech-tag">Rao-Blackwellized PF</span>
+            </div>
+            <div class="btn-group" style="margin-top: 1rem;">
+              <a href="images2/lor_dr_ram_prasad_padhy.pdf" target="_blank" class="btn btn-secondary btn-sm">
+                <span>📑</span> View Letter of Recommendation (LOR) from Dr. Ram Prasad Padhy
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 32Mins AI -->
+        <div class="timeline-item">
+          <div class="timeline-dot">🧠</div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-role">AI &amp; Hardware Research &amp; Development Intern</div>
+              <div class="timeline-date">April 2025 – Sep 2025</div>
+            </div>
+            <div class="timeline-org">32Mins Digital Consultancy Services · IIT Madras Research Park</div>
+            <ul class="timeline-bullets">
+              <li>Worked on an AI-driven learning partner device to assess student engagement during online learning sessions.</li>
+              <li>Developed computer vision pipelines on embedded platforms (Jetson / TDA4VM) to detect facial micro-gestures, gaze angle, and posture in real time.</li>
+              <li>Integrated a low-latency voice-activated query assistant module enabling natural speech interaction through an onboard speaker/microphone array.</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">Edge AI</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Embedded Systems</span>
+              <span class="tech-tag">NLP</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-left">
-    Built with ❤️ by <span>Abhishek Sen</span> · © 2026
-  </div>
-  <div class="footer-right">
-    <a href="mailto:asen4979@gmail.com" class="footer-icon" title="Email">📧</a>
-    <a href="https://github.com/Abhisheksen8269?tab=repositories" class="footer-icon" target="_blank" title="GitHub">💻</a>
-    <a href="https://www.linkedin.com/in/abhishek-sen-aab105259/" class="footer-icon" target="_blank" title="LinkedIn">🔗</a>
-    <a href="images/Abhishek_Sen_Robotics_engineer.pdf" class="footer-icon" target="_blank" title="Resume">📄</a>
-  </div>
-</footer>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Open-Source Code &amp; Repositories</div>
+        <h2 class="section-title">Key Robotics Projects</h2>
+        <p class="section-subtitle">
+          Full codebases, architectures, and simulation/hardware pipelines available directly on GitHub.
+        </p>
+      </div>
 
-<script src="script.js?v=1.2"></script>
+      <div class="projects-grid">
+        <!-- Project 1: AutoWN-25 -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-category">UAV Autonomy</span>
+            <span class="tech-tag">ROS 2 / MAVLink</span>
+          </div>
+          <h3 class="project-title">AutoWN-25 Final Mission Controller V9</h3>
+          <p class="project-desc">
+            Complete high-level mission controller for autonomous drones. Implements state-machine flight modes, precision waypoint following, telemetry logging, and failsafe recovery routines for competition and field deployment.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">PX4</span>
+            <span class="tech-tag">MAVROS</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">State Machines</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Abhisheksen8269/AutoWN-25-Final-Mission-Controller-V9-" target="_blank" rel="noopener" class="github-btn">
+              View Repository on GitHub &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Pseudo RGB-D SLAM -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-category">Perception &amp; SLAM</span>
+            <span class="tech-tag">Foundation Models</span>
+          </div>
+          <h3 class="project-title">Building a Pseudo RGB-D SLAM ROS Package</h3>
+          <p class="project-desc">
+            Replaces physical active depth sensors with zero-shot monocular depth estimation foundation models (<strong>Depth Anything V2</strong> and <strong>UniDepth</strong>). Streams RGB frames from a CSI Sony IMX219 on an NVIDIA Jetson Orin Nano Super into ORB-SLAM2 for real-time 3D visual odometry and dense mapping.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">ROS 2 Humble</span>
+            <span class="tech-tag">Depth Anything V2</span>
+            <span class="tech-tag">ORB-SLAM2</span>
+            <span class="tech-tag">Jetson Orin Nano</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Abhisheksen8269/Building-a-Pseudo-RGB-D-SLAM-ROS-Package" target="_blank" rel="noopener" class="github-btn">
+              View Repository on GitHub &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Robust Navigation TurtleBot3 -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-category">Motion Planning</span>
+            <span class="tech-tag">Differential Drive</span>
+          </div>
+          <h3 class="project-title">Robust Navigation &amp; Trajectory Control for AMRs</h3>
+          <p class="project-desc">
+            Custom standalone navigation stack for differential-drive mobile robots (TurtleBot3) bypassing traditional Nav2 costmaps. Combines <strong>B-Spline Trajectory Smoothing</strong> for $C^2$ kinematic continuity, look-ahead <strong>Pure Pursuit</strong> tracking, and <strong>Artificial Potential Fields (APF)</strong> using 2D LiDAR for dynamic obstacle deflection.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">B-Spline Smoothing</span>
+            <span class="tech-tag">Pure Pursuit</span>
+            <span class="tech-tag">APF Reactive Layer</span>
+            <span class="tech-tag">ROS 2</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Abhisheksen8269/Robust-Navigation-Trajectory-Control-for-Autonomous-Mobile-Robots" target="_blank" rel="noopener" class="github-btn">
+              View Repository on GitHub &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: Autonomous Docking ArUco -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-category">Visual Servoing</span>
+            <span class="tech-tag">Sensor Fusion</span>
+          </div>
+          <h3 class="project-title">Autonomous Docking Using ArUco Markers</h3>
+          <p class="project-desc">
+            Vision-guided autonomous docking ROS 2 package. Fuses monocular camera bearing with planar LiDAR radial depth to calculate 6-DOF transform offsets in TF2; regulates drive wheels via proportional-integral servo controllers to achieve sub-centimeter terminal docking accuracy while managing obstacle clearance.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">ROS 2</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">TF2</span>
+            <span class="tech-tag">Gazebo</span>
+            <span class="tech-tag">Visual Servoing</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Abhisheksen8269/Autonomous-Docking-Using-ArUco-Markers-" target="_blank" rel="noopener" class="github-btn">
+              View Repository on GitHub &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: ANAV Mars Drone -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-category">ISRO Challenge</span>
+            <span class="tech-tag">GPS-Denied Flight</span>
+          </div>
+          <h3 class="project-title">ANAV: Autonomous Drone for Martian Terrain</h3>
+          <p class="project-desc">
+            Autonomous quadrotor designed for the ISRO Robotics Challenge. Operates completely GPS-denied using Intel RealSense D435i depth sensing, optical flow, and YOLOv8 boundary recognition, communicating via ROS 2 and MAVROS to command real-time local waypoint flight trajectories.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Intel RealSense</span>
+            <span class="tech-tag">Optical Flow</span>
+            <span class="tech-tag">YOLOv8</span>
+            <span class="tech-tag">MAVROS</span>
+          </div>
+          <div class="project-footer">
+            <a href="#panel-isro" class="github-btn">
+              View Event Demonstrations &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6: 3D Dynamic Object Tracking LiDAR -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-category">LiDAR Perception</span>
+            <span class="tech-tag">Point Clouds</span>
+          </div>
+          <h3 class="project-title">3D Dynamic Object Tracking with LiDAR</h3>
+          <p class="project-desc">
+            Performs Euclidean clustering and 3D oriented bounding box tracking on dense LiDAR point clouds. Predicts dynamic obstacle velocity vectors and interfaces with ArduPilot and Gazebo Classic for reactive waypoint diversion.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">PCL</span>
+            <span class="tech-tag">3D LiDAR</span>
+            <span class="tech-tag">ArduPilot SITL</span>
+            <span class="tech-tag">Gazebo Classic</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Abhisheksen8269/3d-dynamic-object-tracking-with-LIdar" target="_blank" rel="noopener" class="github-btn">
+              View Repository on GitHub &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 7: Ardupilot Gazebo Classic -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-category">Simulation</span>
+            <span class="tech-tag">SITL</span>
+          </div>
+          <h3 class="project-title">ArduPilot with Gazebo Classic Simulation</h3>
+          <p class="project-desc">
+            Comprehensive simulation framework coupling ArduPilot software-in-the-loop (SITL) with Gazebo Classic physics environment for autonomous multi-rotor flight validation, sensor noise modeling, and tuning PID attitude loops.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">ArduPilot</span>
+            <span class="tech-tag">Gazebo Classic</span>
+            <span class="tech-tag">MAVLink</span>
+            <span class="tech-tag">Python</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Abhisheksen8269/Ardupilot-with-gazebo-classic" target="_blank" rel="noopener" class="github-btn">
+              View Repository on GitHub &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">National Competitions &amp; Field Trials</div>
+        <h2 class="section-title">Major Achievements &amp; Demonstrations</h2>
+        <p class="section-subtitle">
+          Demonstrated autonomous flight platforms to senior space agency chairmen, astronauts, and national juries.
+        </p>
+      </div>
+
+      <div class="ach-nav">
+        <button class="ach-tab active" data-target="panel-isro">🚀 ISRO Robotics Challenge 2025</button>
+        <button class="ach-tab" data-target="panel-aerothon">✈️ SAE Aerothon 2024 &amp; 2025</button>
+        <button class="ach-tab" data-target="panel-roorkee">🏛️ IIT Roorkee Cognizance</button>
+      </div>
+
+      <!-- Panel: ISRO -->
+      <div class="ach-panel active" id="panel-isro">
+        <div class="ach-feature-card">
+          <div class="ach-feature-grid">
+            <div>
+              <h3 class="ach-title">Top Finalist — ISRO Robotics Challenge (IRoC-U 2025)</h3>
+              <div class="ach-org">Indian Space Research Organisation (URSC Bengaluru &amp; Bharat Mandapam, New Delhi)</div>
+              <p class="ach-text">
+                As Team Captain of Aerobotics Team Astra (10-member crew from IIITDM Kancheepuram), we cleared all four rigorous rounds of the ISRO Robotics Challenge to reach the national finals at URSC Bengaluru, demonstrating "ANAV" — our GPS-denied autonomous drone engineered for Mars-like extraterrestrial exploration.
+              </p>
+              <p class="ach-text">
+                Selected among the top national finalist teams, we were invited to the <strong>National Space Day Award Ceremony at Bharat Mandapam, New Delhi</strong>. Our autonomous technology was personally reviewed and commended by former ISRO Chairman <strong>Dr. S. Somanath</strong> and current ISRO Chairman <strong>Dr. V. Narayanan</strong>. We also had the distinct honor of interacting with the four <strong>Gaganyaan Astronaut-Designates</strong> (including Group Captain Angad Pratap).
+              </p>
+              <div class="btn-group">
+                <a href="https://drive.google.com/drive/folders/1q4FnJ5ZV5Z7Al3QK0DnG9IhPv-3kqj8s" target="_blank" rel="noopener" class="btn btn-drive btn-sm">
+                  <span>📁</span> Open ISRO Competition Google Drive Folder
+                </a>
+                <a href="images2/isro_competition_doc.pdf" target="_blank" class="btn btn-secondary btn-sm">
+                  <span>📄</span> View Competition Document (PDF)
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="hero-highlights" style="margin: 0 0 1.5rem 0;">
+                <div class="hero-stat-item">
+                  <div class="num">Top Finalist</div>
+                  <div class="label">Across India</div>
+                </div>
+                <div class="hero-stat-item">
+                  <div class="num">0 GPS</div>
+                  <div class="label">Vision-Based Autonomy</div>
+                </div>
+                <div class="hero-stat-item">
+                  <div class="num">ISRO Honors</div>
+                  <div class="label">Chairmen Commendation</div>
+                </div>
+              </div>
+              <p class="ach-text" style="font-size: 0.85rem; color: var(--text-muted);">
+                Click on any photograph below to view the full high-resolution image and details.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ISRO Photo Gallery -->
+        <div class="photo-gallery">
+          <div class="gallery-item" data-lightbox data-src="images/isro_chairman_somnath.jpg" data-caption="With ISRO Chairman Dr. S. Somanath reviewing our autonomous drone at Bharat Mandapam, New Delhi.">
+            <img src="images/isro_chairman_somnath.jpg" alt="ISRO Chairman Dr. S. Somanath reviewing Team Astra's drone" loading="lazy"/>
+            <div class="gallery-caption">With ISRO Chairman Dr. S. Somanath</div>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-src="images/isro_angad_pratap.jpg" data-caption="Demonstrating the GPS-denied autonomous drone to Gaganyaan Astronaut Group Captain Angad Pratap at National Space Day.">
+            <img src="images/isro_angad_pratap.jpg" alt="Demonstrating drone to Gaganyaan Astronaut Angad Pratap" loading="lazy"/>
+            <div class="gallery-caption">With Astronaut Group Capt. Angad Pratap</div>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-src="images/isro_bharat_mandapam.jpg" data-caption="Team Astra with military and space dignitaries at National Space Day, Bharat Mandapam, New Delhi.">
+            <img src="images/isro_bharat_mandapam.jpg" alt="Team Astra with dignitaries at Bharat Mandapam" loading="lazy"/>
+            <div class="gallery-caption">Bharat Mandapam National Space Day</div>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-src="images/isro_bharat_mandapam2.jpg" data-caption="Presenting drone autonomy architecture and SLAM pipelines to ISRO scientists at the National Space Day Pavilion.">
+            <img src="images/isro_bharat_mandapam2.jpg" alt="Live drone presentation at Bharat Mandapam" loading="lazy"/>
+            <div class="gallery-caption">Autonomy Architecture Presentation</div>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-src="images/isro_hq_team.jpg" data-caption="Team Astra at the ISRO Space Exhibition with Chandrayaan & launch vehicle replicas.">
+            <img src="images/isro_hq_team.jpg" alt="Team Astra at ISRO Space Exhibition" loading="lazy"/>
+            <div class="gallery-caption">ISRO Space Exhibition Pavilion</div>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-src="images/isro_arena_team.jpg" data-caption="Team Astra in the ISRO Robotics Challenge competition arena.">
+            <img src="images/isro_arena_team.jpg" alt="Team Astra in ISRO competition arena" loading="lazy"/>
+            <div class="gallery-caption">ISRO Competition Field Arena</div>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-src="images/isro_judges_presentation.jpg" data-caption="Demonstrating real-time vision processing and MAVROS flight control to ISRO evaluation panel.">
+            <img src="images/isro_judges_presentation.jpg" alt="Presenting drone to ISRO evaluation panel" loading="lazy"/>
+            <div class="gallery-caption">Evaluation by ISRO Panel</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: Aerothon -->
+      <div class="ach-panel" id="panel-aerothon">
+        <div class="ach-feature-card">
+          <div class="ach-feature-grid">
+            <div>
+              <h3 class="ach-title">SAE Aerothon 2024 &amp; 2025</h3>
+              <div class="ach-org">Society of Automotive Engineers (SAE India)</div>
+              <p class="ach-text">
+                India's premier annual UAV competition challenging collegiate teams to design, fabricate, and fly autonomous drones. Evaluated across comprehensive aerodynamic design reports, technical presentations, and autonomous flight missions including waypoint navigation, payload delivery, and precision landing.
+              </p>
+              <ul class="timeline-bullets">
+                <li><strong>All India Rank 8 (AIR 8)</strong> — SAE Aerothon 2025 for Detailed Design Report &amp; Presentation Round.</li>
+                <li><strong>Winner, Best Challenger Award &amp; AIR 21</strong> — SAE Aerothon 2023 report documentation round.</li>
+                <li>Designed fixed-wing and multi-rotor platforms with custom power distribution PCBs and fail-safe autonomy stacks.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="hero-highlights" style="margin: 0 0 1.5rem 0;">
+                <div class="hero-stat-item">
+                  <div class="num">AIR 8</div>
+                  <div class="label">Aerothon 2025 (Nationwide)</div>
+                </div>
+                <div class="hero-stat-item">
+                  <div class="num">Winner</div>
+                  <div class="label">Challenger Category</div>
+                </div>
+                <div class="hero-stat-item">
+                  <div class="num">AIR 21</div>
+                  <div class="label">Documentation Round</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-gallery">
+          <div class="gallery-item" data-lightbox data-src="images/aerothon_team.jpeg" data-caption="Team Astra at SAE Aerothon — GITAM University, Visakhapatnam.">
+            <img src="images/aerothon_team.jpeg" alt="Team Astra at SAE Aerothon" loading="lazy"/>
+            <div class="gallery-caption">Team Astra at SAE Aerothon Field</div>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-src="images/aerothon_2025_presentation.jpg" data-caption="Technical design and propulsion presentation at SAE Aerothon 2025.">
+            <img src="images/aerothon_2025_presentation.jpg" alt="Technical presentation at SAE Aerothon 2025" loading="lazy"/>
+            <div class="gallery-caption">SAE Aerothon 2025 Technical Evaluation</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: IIT Roorkee -->
+      <div class="ach-panel" id="panel-roorkee">
+        <div class="ach-feature-card">
+          <div class="ach-feature-grid">
+            <div>
+              <h3 class="ach-title">IIT Roorkee Cognizance — Autonomous Drone Competition</h3>
+              <div class="ach-org">Indian Institute of Technology, Roorkee</div>
+              <p class="ach-text">
+                Cognizance is the annual technical festival of IIT Roorkee. Competed against top engineering universities nationwide in the Autonomous Drone Challenge, requiring UAVs to complete obstacle-dense indoor/outdoor courses under tight timing and precision constraints.
+              </p>
+              <ul class="timeline-bullets">
+                <li><strong>One of only 4 teams nationwide</strong> to successfully execute both manual flight maneuvers and autonomous obstacle-course regimes.</li>
+                <li>Constructed custom flight firmware profiles, low-latency telemetry feeds, and real-time vision navigation.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="hero-highlights" style="margin: 0 0 1.5rem 0;">
+                <div class="hero-stat-item">
+                  <div class="num">Top 4</div>
+                  <div class="label">National Completion Rate</div>
+                </div>
+                <div class="hero-stat-item">
+                  <div class="num">100%</div>
+                  <div class="label">Course Navigation</div>
+                </div>
+                <div class="hero-stat-item">
+                  <div class="num">IIT Roorkee</div>
+                  <div class="label">Cognizance Challenge</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-gallery">
+          <div class="gallery-item" data-lightbox data-src="images/iit_roorkee_drone.jpg" data-caption="Team Astra at the IIT Roorkee Cognizance Autonomous Drone Arena.">
+            <img src="images/iit_roorkee_drone.jpg" alt="Team Astra at IIT Roorkee Cognizance" loading="lazy"/>
+            <div class="gallery-caption">IIT Roorkee Competition Drone Flight</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verified Certificates & Academic Distinctions -->
+  <section id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Official Documents &amp; Accreditations</div>
+        <h2 class="section-title">Verified Certificates &amp; State Honors</h2>
+        <p class="section-subtitle">
+          Government honors, defense certifications, and academic state ranks. Click any card to preview the full document.
+        </p>
+      </div>
+
+      <div class="certs-grid">
+        <!-- Certificate 1: NCC C -->
+        <div class="cert-card">
+          <div class="cert-preview" data-lightbox data-src="images2/ncc_c_certificate.jpeg" data-caption="National Cadet Corps (NCC) 'C' Certificate with 'A' Grade (Highest Qualification).">
+            <img src="images2/ncc_c_certificate.jpeg" alt="NCC 'C' Certificate with 'A' Grade" loading="lazy"/>
+            <span class="cert-badge-floating">NCC 'A' Grade</span>
+          </div>
+          <div class="cert-info">
+            <h4 class="cert-title">National Cadet Corps (NCC) 'C' Certificate</h4>
+            <div class="cert-issuer">Ministry of Defence, Government of India</div>
+            <p class="cert-desc">Awarded the highest qualification in NCC with top 'A' Grade, demonstrating military discipline, leadership, and national service.</p>
+            <a href="images2/ncc_c_certificate.jpeg" target="_blank" class="btn btn-secondary btn-sm">View Full Certificate</a>
+          </div>
+        </div>
+
+        <!-- Certificate 2: Top 1% State Merit -->
+        <div class="cert-card">
+          <div class="cert-preview" data-lightbox data-src="images2/top_1percent_state_merit.jpeg" data-caption="State Merit Scholar (Top 1% Statewide in Class XII), MP Board of Secondary Education.">
+            <img src="images2/top_1percent_state_merit.jpeg" alt="State Merit Scholar Top 1% in Class 12" loading="lazy"/>
+            <span class="cert-badge-floating">Top 1% State</span>
+          </div>
+          <div class="cert-info">
+            <h4 class="cert-title">State Merit Scholar (Class XII)</h4>
+            <div class="cert-issuer">Board of Secondary Education, Madhya Pradesh</div>
+            <p class="cert-desc">Conferred merit honor and scholarship by the Secretary of MPBSE for ranking in the top 1% of students statewide across Madhya Pradesh.</p>
+            <a href="images2/top_1percent_state_merit.jpeg" target="_blank" class="btn btn-secondary btn-sm">View Merit Certificate</a>
+          </div>
+        </div>
+
+        <!-- Certificate 3: District Collector Award -->
+        <div class="cert-card">
+          <div class="cert-preview" data-lightbox data-src="images2/award_district_collector.jpeg" data-caption="Awarded by District Collector for 1st Place in 10th Standard Examinations, District Sehore.">
+            <img src="images2/award_district_collector.jpeg" alt="District Collector First Rank Award" loading="lazy"/>
+            <span class="cert-badge-floating">District Rank 1</span>
+          </div>
+          <div class="cert-info">
+            <h4 class="cert-title">District Rank 1 (Class X Academic Excellence)</h4>
+            <div class="cert-issuer">District Collector, Sehore (Madhya Pradesh)</div>
+            <p class="cert-desc">Honored with special felicitation by the District Collector for securing 1st place in Class 10 Board examinations across District Sehore.</p>
+            <a href="images2/award_district_collector.jpeg" target="_blank" class="btn btn-secondary btn-sm">View Collector Certificate</a>
+          </div>
+        </div>
+
+        <!-- Certificate 4: MLA & SDM Award -->
+        <div class="cert-card">
+          <div class="cert-preview" data-lightbox data-src="images2/mla_award_certificate.pdf" data-caption="Awarded by MLA and SDM for 1st Place in Block (Class 10).">
+            <img src="images2/award_district_collector.jpeg" alt="MLA and SDM Academic Award" loading="lazy" style="filter: brightness(0.85);"/>
+            <span class="cert-badge-floating">MLA &amp; SDM Award</span>
+          </div>
+          <div class="cert-info">
+            <h4 class="cert-title">MLA &amp; Sub-Divisional Magistrate Award</h4>
+            <div class="cert-issuer">Legislative Assembly &amp; Sub-Divisional Administration</div>
+            <p class="cert-desc">Conferred academic merit citation by Member of Legislative Assembly (MLA) and SDM for securing first position in the block.</p>
+            <a href="images2/mla_award_certificate.pdf" target="_blank" class="btn btn-secondary btn-sm">View Official PDF Citation</a>
+          </div>
+        </div>
+
+        <!-- Certificate 5: Pratibha Protsahan -->
+        <div class="cert-card">
+          <div class="cert-preview" data-lightbox data-src="images2/hindi_quiz_pratibha_award.jpeg" data-caption="Pratibha Protsahan Award issued by M.P. Rashtrabhasha Prachar Samiti.">
+            <img src="images2/hindi_quiz_pratibha_award.jpeg" alt="Pratibha Protsahan Award" loading="lazy"/>
+            <span class="cert-badge-floating">State Cultural Award</span>
+          </div>
+          <div class="cert-info">
+            <h4 class="cert-title">Pratibha Protsahan State Award</h4>
+            <div class="cert-issuer">M.P. Rashtrabhasha Prachar Samiti</div>
+            <p class="cert-desc">Awarded state-level distinction for excellence in language proficiency, literature, and competitive linguistics.</p>
+            <a href="images2/hindi_quiz_pratibha_award.jpeg" target="_blank" class="btn btn-secondary btn-sm">View Award Certificate</a>
+          </div>
+        </div>
+
+        <!-- Certificate 6: Biodiversity Quiz -->
+        <div class="cert-card">
+          <div class="cert-preview" data-lightbox data-src="images2/mp_biodiversity_award.jpeg" data-caption="Biodiversity Conservation Initiative Certificate issued by MP State Biodiversity Board.">
+            <img src="images2/mp_biodiversity_award.jpeg" alt="MP State Biodiversity Board Award" loading="lazy"/>
+            <span class="cert-badge-floating">Conservation Award</span>
+          </div>
+          <div class="cert-info">
+            <h4 class="cert-title">State Biodiversity Conservation Distinction</h4>
+            <div class="cert-issuer">Madhya Pradesh State Biodiversity Board</div>
+            <p class="cert-desc">Recognized for state-level awareness and foundational knowledge in environmental systems, science, and ecological sustainability.</p>
+            <a href="images2/mp_biodiversity_award.jpeg" target="_blank" class="btn btn-secondary btn-sm">View Certificate</a>
+          </div>
+        </div>
+
+        <!-- Certificate 7: Tourism Quiz -->
+        <div class="cert-card">
+          <div class="cert-preview" data-lightbox data-src="images2/tourism_quiz_award.jpeg" data-caption="State Tourism Quiz Certificate issued by Madhya Pradesh Tourism Board.">
+            <img src="images2/tourism_quiz_award.jpeg" alt="MP Tourism Board State Quiz Award" loading="lazy"/>
+            <span class="cert-badge-floating">Tourism Board</span>
+          </div>
+          <div class="cert-info">
+            <h4 class="cert-title">State Tourism Board Competitive Award</h4>
+            <div class="cert-issuer">Madhya Pradesh Tourism Board</div>
+            <p class="cert-desc">Participated in statewide competitive examinations demonstrating extensive knowledge in geographic, historical, and cultural heritage frameworks.</p>
+            <a href="images2/tourism_quiz_award.jpeg" target="_blank" class="btn btn-secondary btn-sm">View Certificate</a>
+          </div>
+        </div>
+
+        <!-- Certificate 8: ISRO Competition Doc -->
+        <div class="cert-card">
+          <div class="cert-preview" data-lightbox data-src="images2/isro_competition_doc.pdf" data-caption="ISRO Robotics Challenge Competition Dossier & Documentation.">
+            <img src="images/isro_hq_team.jpg" alt="ISRO Competition Documentation" loading="lazy" style="filter: brightness(0.85);"/>
+            <span class="cert-badge-floating">ISRO Document</span>
+          </div>
+          <div class="cert-info">
+            <h4 class="cert-title">ISRO Robotics Challenge Official Dossier</h4>
+            <div class="cert-issuer">Indian Space Research Organisation (URSC)</div>
+            <p class="cert-desc">Documentation, finalist confirmation, and presentation materials for the Martian rover/drone challenge.</p>
+            <a href="images2/isro_competition_doc.pdf" target="_blank" class="btn btn-secondary btn-sm">Download Official Document (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Technical Competencies</div>
+        <h2 class="section-title">Skills &amp; Technology Stack</h2>
+        <p class="section-subtitle">
+          Hands-on proficiency developed through research thesis, industry deployment, and national competitions.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-category-title">🤖 Control &amp; Robotics</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Control Barrier Functions (CBF)</span>
+            <span class="skill-pill">Quadratic Programming (QP)</span>
+            <span class="skill-pill">ROS 2 (Humble, Iron)</span>
+            <span class="skill-pill">ROS 1 (Noetic)</span>
+            <span class="skill-pill">PX4 Autopilot</span>
+            <span class="tech-tag">ArduPilot</span>
+            <span class="skill-pill">MAVROS / MAVSDK</span>
+            <span class="skill-pill">Pure Pursuit</span>
+            <span class="skill-pill">B-Spline Smoothing</span>
+            <span class="skill-pill">Gazebo (Harmonic &amp; Classic)</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-title">👁️ Perception &amp; SLAM</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Gaussian Processes (GP)</span>
+            <span class="skill-pill">LiDAR SLAM (GMapping)</span>
+            <span class="skill-pill">ORB-SLAM2 / ORB-SLAM3</span>
+            <span class="skill-pill">Point Cloud Library (PCL)</span>
+            <span class="skill-pill">Depth Anything V2</span>
+            <span class="skill-pill">UniDepth</span>
+            <span class="skill-pill">OpenCV</span>
+            <span class="skill-pill">YOLOv8 / YOLOv3</span>
+            <span class="skill-pill">Extended Kalman Filter (EKF)</span>
+            <span class="skill-pill">Particle Filters</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-title">💻 Programming &amp; Frameworks</div>
+          <div class="skill-pills">
+            <span class="skill-pill">C / C++</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">MATLAB</span>
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">TensorFlow</span>
+            <span class="skill-pill">Linux (Ubuntu)</span>
+            <span class="skill-pill">Git / GitHub</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Bash Scripting</span>
+            <span class="skill-pill">LaTeX</span>
+            <span class="skill-pill">SQLite / REST API</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category-title">⚡ Embedded Hardware &amp; Avionics</div>
+          <div class="skill-pills">
+            <span class="skill-pill">NVIDIA Jetson Orin Nano</span>
+            <span class="skill-pill">Crazyflie 2.1 Nano-UAV</span>
+            <span class="skill-pill">Velodyne VLP-16 LiDAR</span>
+            <span class="skill-pill">Livox 4D LiDAR</span>
+            <span class="skill-pill">Intel RealSense D435i</span>
+            <span class="skill-pill">UWB Loco Positioning</span>
+            <span class="skill-pill">IMU &amp; Sensor Fusion</span>
+            <span class="skill-pill">Altium Designer</span>
+            <span class="skill-pill">EasyEDA</span>
+            <span class="skill-pill">STM32 / ESP32 / Arduino</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic References Section -->
+  <section id="references">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Academic Endorsements</div>
+        <h2 class="section-title">Academic References</h2>
+        <p class="section-subtitle">
+          Official letters of recommendation and thesis supervisory faculty members.
+        </p>
+      </div>
+
+      <div class="ref-grid">
+        <div class="ref-card">
+          <div class="ref-name">Dr. Selvajyothi K</div>
+          <div class="ref-role">Associate Professor</div>
+          <div class="ref-dept">Department of Electronics &amp; Communication Engineering<br/>IIITDM Kancheepuram, India</div>
+          <div class="ref-rel">Undergraduate Capstone Thesis Advisor</div>
+          <div class="ref-email">Email: <a href="mailto:ksjyothi@iiitdm.ac.in">ksjyothi@iiitdm.ac.in</a></div>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-name">Dr. Satadal Ghosh</div>
+          <div class="ref-role">Assistant Professor</div>
+          <div class="ref-dept">Department of Aerospace Engineering<br/>Indian Institute of Technology (IIT) Madras, India</div>
+          <div class="ref-rel">Thesis Co-Advisor &amp; Project Guide (GNC Lab)</div>
+          <div class="ref-email">Email: <a href="mailto:sghosh@ae.iitm.ac.in">sghosh@ae.iitm.ac.in</a></div>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-name">Dr. Ram Prasad Padhy</div>
+          <div class="ref-role">Assistant Professor</div>
+          <div class="ref-dept">School of Electrical &amp; Computer Sciences<br/>IIT Bhubaneswar, India</div>
+          <div class="ref-rel">Autonomous Systems Laboratory Supervisor</div>
+          <div class="ref-email">Email: <a href="mailto:ramprasad@iitbbs.ac.in">ramprasad@iitbbs.ac.in</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-main">
+        <div class="section-eyebrow">Get in Touch</div>
+        <h2 class="section-title" style="margin-bottom: 0.8rem;">Let's Connect &amp; Collaborate</h2>
+        <p class="hero-bio" style="max-width: 600px; margin: 0 auto;">
+          I am actively preparing for Master's admissions in Robotics in Japan (MEXT Scholarship 2027 intake) and open to research discussions, industrial collaborations, and roboticist appointments.
+        </p>
+
+        <div class="contact-methods">
+          <a href="mailto:asen4979@gmail.com" class="btn btn-primary">
+            <span>✉️</span> asen4979@gmail.com
+          </a>
+          <a href="tel:+918269856166" class="btn btn-secondary">
+            <span>📞</span> +91-8269856166
+          </a>
+          <a href="https://github.com/Abhisheksen8269" target="_blank" rel="noopener" class="btn btn-secondary">
+            <span>💻</span> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/abhishek-sen-aab105259/" target="_blank" rel="noopener" class="btn btn-secondary">
+            <span>🔗</span> LinkedIn
+          </a>
+          <a href="Abhishek_Sen_Academic_CV.pdf" target="_blank" class="btn btn-secondary">
+            <span>📥</span> Download Academic CV (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>
+        Designed &amp; Maintained by <strong>Abhishek Sen</strong> · Hosted on GitHub Pages · &copy; 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for High-Resolution Certificates & Photographs -->
+  <div class="modal" id="imageModal" role="dialog" aria-modal="true">
+    <button class="modal-close" aria-label="Close image modal">&times;</button>
+    <div class="modal-content-wrap">
+      <img id="modalImage" class="modal-img" src="" alt="Certificate / Event Preview"/>
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <script src="script.js?v=2.0"></script>
 </body>
 </html>
