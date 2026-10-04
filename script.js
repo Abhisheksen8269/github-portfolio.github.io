@@ -18,9 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.style.top = '64px';
         navMenu.style.left = '0';
         navMenu.style.width = '100%';
-        navMenu.style.background = '#0b0f19';
+        navMenu.style.background = '#ffffff';
         navMenu.style.padding = '1.5rem';
-        navMenu.style.borderBottom = '1px solid #1e293b';
+        navMenu.style.borderBottom = '1px solid #e2e8f0';
+        navMenu.style.boxShadow = '0 10px 25px rgba(0,0,0,0.06)';
         navMenu.style.gap = '1rem';
       }
     });
