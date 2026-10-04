@@ -18,15 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.style.top = '64px';
         navMenu.style.left = '0';
         navMenu.style.width = '100%';
-        navMenu.style.background = '#090d16';
+        navMenu.style.background = '#0b0f19';
         navMenu.style.padding = '1.5rem';
         navMenu.style.borderBottom = '1px solid #1e293b';
+        navMenu.style.gap = '1rem';
       }
     });
 
     document.querySelectorAll('.nav-menu a').forEach(link => {
       link.addEventListener('click', () => {
-        if (window.innerWidth <= 680) {
+        if (window.innerWidth <= 992) {
           navMenu.style.display = 'none';
         }
       });
